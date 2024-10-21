@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookHub</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0a0a23;
+            color: #fff;
+        }
+
+        /* Header Section */
+        header {
+            background-color: #131339;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo h1 {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .search-bar {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-bar input {
+            padding: 8px;
+            border-radius: 5px;
+            border: none;
+            margin-right: 5px;
+        }
+
+        .search-bar button {
+            padding: 8px 12px;
+            border: none;
+            background-color: #5cbbf6;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .contact-info a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Navigation Menu */
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+            background-color: #1b1b4d;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 40px 20px;
+        }
+
+        .hero-section h2 {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .hero-section p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .hero-section button {
+            padding: 10px 20px;
+            background-color: #5cbbf6;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+        .hero-section img {
+            max-width: 300px;
+            margin-left: 20px;
+        }
+
+        /* Services Section */
+        .services {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            background-color: #1b1b4d;
+        }
+
+        .service-item p {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .service-item span {
+            font-size: 14px;
+        }
+
+        /* Books Sections */
+        .book-section {
+            padding: 40px 20px;
+        }
+
+        .book-section h2 {
+            font-size: 28px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .book-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .book-item {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .book-item img {
+            max-width: 180px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .book-item p {
+            font-size: 16px;
+        }
+
+        .book-item .price {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #131339;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer p {
+            margin-bottom: 10px;
+        }
+
+        footer .footer-contact p {
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <h1>BookHub</h1>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search our store">
+            <button>Search</button>
+        </div>
+        <div class="contact-info">
+            <p><a href="tel:+0123456789">(+01)-234-56789</a></p>
+        </div>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <h2>Get Your New Book Collections</h2>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+            <button>Explore More</button>
+        </div>
+        <div class="hero-image">
+            <img src="https://m.media-amazon.com/images/I/71oBKe9AHZL._AC_UF1000,1000_QL80_.jpg">
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="service-item">
+            <p>Free Shipping</p>
+            <span>Order over $100</span>
+        </div>
+        <div class="service-item">
+            <p>Secure Payment</p>
+            <span>100% Secure Payment</span>
+        </div>
+        <div class="service-item">
+            <p>Best Price</p>
+            <span>Guaranteed Low Cost</span>
+        </div>
+        <div class="service-item">
+            <p>Easy Return</p>
+            <span>Within 30 Days Returns</span>
+        </div>
+    </section>
+
+    <!-- Featured Collections Section -->
+    <section class="book-section">
+        <h2>Featured Collections</h2>
+        <div class="book-list">
+            <div class="book-item">
+                <img src="https://m.media-amazon.com/images/I/81af+MCATTL.jpg" alt="Black Night">
+                <p>Black Night</p>
+                <p class="price">$80.00</p>
+            </div>
+            <div class="book-item">
+                <img src="https://m.media-amazon.com/images/I/81NLDvyAHrL._AC_UF1000,1000_QL80_.jpg" alt="About The First Night">
+                <p>About The First Night</p>
+                <p class="price">$19.00</p>
+            </div>
+            <div class="book-item">
+                <img src="https://m.media-amazon.com/images/I/713jIoMO3UL._AC_UF1000,1000_QL80_.jpg" alt="Open The Sky">
+                <p>Open The Sky</p>
+                <p class="price">$80.00</p>
+            </div>
+            <div class="book-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_V_MUizNwLgldm9PwEZ4iJOrYEU5Cag5HpQ&s" alt="Book Hard Cover">
+                <p>Book Hard Cover</p>
+                <p class="price">$55.00</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Books Section -->
+    <section class="book-section">
+        <h2>Popular Books</h2>
+        <div class="book-list">
+            <div class="book-item">
+                <img src="https://m.media-amazon.com/images/I/81drfTT9ZfL.jpg" alt="The Great Escape">
+                <p>The Great Escape</p>
+                <p class="price">$65.00</p>
+            </div>
+            <div class="book-item">
+                <img src="https://cdnp.targetpublications.org/media/catalog/product/cache/f63311a2a00c092df9b3c20ab1a8a20f/1/2/12473_2_1.jpg" alt="The Final Chapter">
+                <p>The Final Chapter</p>
+                <p class="price">$45.00</p>
+            </div>
+            <div class="book-item">
+                <img src="https://eklavyapitara.in/cdn/shop/files/childrenliteraturefront.jpg?v=1721041054" alt="Under the Stars">
+                <p>Under the Stars</p>
+                <p class="price">$75.00</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Books Section -->
+    <section class="book-section">
+        <h2>Latest Books</h2>
+        <div class="book-list">
+            <div class="book-item">
+                <img src="https://github.com/codewithsadee/booken/blob/master/assets/images/book-10.png?raw=true" alt="Silent Waters">
+                <p>Silent Waters</p>
+                <p class="price">$39.00</p>
+            </div>
+            <div class="book-item">
+                <img src="https://github.com/codewithsadee/booken/blob/master/assets/images/book-12.png?raw=true" alt="Into the Wild">
+                <p>Into the Wild</p>
+                <p class="price">$28.00</p>
+            </div>
+            <div class="book-item">
+                <img src="https://github.com/codewithsadee/booken/blob/master/assets/images/book-10.png?raw=true" alt="Latest Books Collection">
+                <p>Latest Books Collection</p>
+                <p class="price">$120.00</p>
+            </div>
+            <div class="book-item">
+                <img src="https://github.com/codewithsadee/booken/blob/master/assets/images/book-11.png?raw=true" alt="The Wisdom Tree">
+                <p>The Wisdom Tree</p>
+                <p class="price">$45.00</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 50% Offer Section -->
+    <section class="book-section">
+        <h2>50% Offer Books</h2>
+        <div class="book-list">
+            <div class="book-item">
+                <img src="https://www.crossword.in/cdn/shop/files/71eS-V_VGBL._SL1400_180x.jpg?v=1715418451" alt="Book Offer 1">
+                <p>Book Title 1</p>
+                <p class="price">$40.00 <span style="text-decoration: line-through; color: red;">$80.00</span></p>
+            </div>
+            <div class="book-item">
+                <img src="https://www.crossword.in/cdn/shop/files/81kcsSKUr1L_180x.jpg?v=1688625772" alt="Book Offer 2">
+                <p>Book Title 2</p>
+                <p class="price">$25.00 <span style="text-decoration: line-through; color: red;">$50.00</span></p>
+            </div>
+            <div class="book-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBvrBbyR4qHd-1gJTy5C5iH4nWVVs91kcoGQ&s" alt="Book Offer 3">
+                <p>Book Title 3</p>
+                <p class="price">$30.00 <span style="text-decoration: line-through; color: red;">$60.00</span></p>
+            </div>
+            <div class="book-item">
+                <img src="https://www.crossword.in/cdn/shop/files/81iqZZxiWKL._SY466_180x.jpg?v=1698303636" alt="Book Offer 4">
+                <p>Book Title 4</p>
+                <p class="price">$15.00 <span style="text-decoration: line-through; color: red;">$30.00</span></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 BookHub. All Rights Reserved.</p>
+        <div class="footer-contact">
+            <p>Contact Us: <a href="tel:+0123456789">(+01)-234-56789</a></p>
+        </div>
+    </footer>
+</body>
+</html>
